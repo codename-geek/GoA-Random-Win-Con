@@ -2739,6 +2739,7 @@ function SeedClearedCheck()
 	local cureCount = ReadByte(Save+0x3597)
 	local magnetCount = ReadByte(Save+0x35CF)
 	local reflectCount = ReadByte(Save+0x35D0)
+	local magicCount = fireCount + blizzardCount + thunderCount + cureCount + magnetCount + reflectCount
 
 	--Torn Pages
 	local truePageCount = 0
@@ -2910,7 +2911,7 @@ function SeedClearedCheck()
 	elseif WinConNum == 16 and ReadByte(Save+0x363D) >= (ObjectiveCount / 2) then
 		SeedCleared = true
 	--50/50 Objectives/Checks
-	elseif WinConNum == 17 and magicCount + truePageCount + formCount + summonCount + abilityCount + proofCount + unlockCount >= 32 and ReadByte(Save+0x363D) >= (ObjectiveCount / 2) then
+	elseif WinConNum == 17 and (magicCount + truePageCount + formCount + summonCount + abilityCount + proofCount + unlockCount >= 32) and ReadByte(Save+0x363D) >= (ObjectiveCount / 2) then
 		SeedCleared = true
 	end
 end
