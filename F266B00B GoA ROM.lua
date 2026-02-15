@@ -2898,7 +2898,7 @@ function SeedClearedCheck()
 	elseif WinConNum == 12 and ReadByte(Save+0x32F6) >= 6 and ReadByte(Save+0x332E) >= 6 and ReadByte(Save+0x3366) >= 6 and ReadByte(Save+0x339E) >= 6 and ReadByte(Save+0x33D6) >= 6 then
 		SeedCleared = true
 	--All Forms to Level 7
-	elseif WinConNum == 13 and ReadByte(Save+0x32F6) >= 7 and ReadByte(Save+0x332E) >= 7 and ReadBytehttps://cdn.discordapp.com/attachments/1102766614769831966/1472468110836760791/image.png?ex=6992ae4a&is=69915cca&hm=6e6d633374f091873b4e43f5e8a22f2ba45d2c23df158b79fbcd2f79df621d69&(Save+0x3366) >= 7 and ReadByte(Save+0x339E) >= 7 and ReadByte(Save+0x33D6) >= 7 then
+	elseif WinConNum == 13 and ReadByte(Save+0x32F6) >= 7 and ReadByte(Save+0x332E) >= 7 and ReadByte(Save+0x3366) >= 7 and ReadByte(Save+0x339E) >= 7 and ReadByte(Save+0x33D6) >= 7 then
 		SeedCleared = true
 	--Reach Objective Count
 	elseif WinConNum == 14 and ReadByte(Save+0x363D) >= ObjectiveCount then
